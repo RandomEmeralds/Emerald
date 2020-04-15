@@ -1,0 +1,728 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ProjectEmeraldv200 = Instance.new("ScreenGui")
+local Login = Instance.new("Frame")
+local Top = Instance.new("Frame")
+local Top_2 = Instance.new("Frame")
+local LoginTitle = Instance.new("TextLabel")
+local Username = Instance.new("TextBox")
+local Password = Instance.new("TextBox")
+local Name = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local LoginButton = Instance.new("TextButton")
+local MainMenu = Instance.new("Frame")
+local MainTitle = Instance.new("TextLabel")
+local ScriptsPortal = Instance.new("TextButton")
+local ExecutorPortal = Instance.new("TextButton")
+local CreditsPortal = Instance.new("TextButton")
+local Credits_2 = Instance.new("TextLabel")
+local Top_3 = Instance.new("Frame")
+local Top_4 = Instance.new("Frame")
+local MainMenuExit = Instance.new("TextButton")
+local Executor = Instance.new("Frame")
+local Top_5 = Instance.new("Frame")
+local ExecutorTitle = Instance.new("TextLabel")
+local ScrollingFeature = Instance.new("ScrollingFrame")
+local Script = Instance.new("TextBox")
+local ExecutorExit = Instance.new("TextButton")
+local Top_6 = Instance.new("Frame")
+local ExecuteButton = Instance.new("TextButton")
+local ClearButton = Instance.new("TextButton")
+local Scripts = Instance.new("Frame")
+local Top_7 = Instance.new("Frame")
+local Top_8 = Instance.new("Frame")
+local Jailbreak = Instance.new("TextButton")
+local ABizarreDay = Instance.new("TextButton")
+local ScriptsTitle = Instance.new("TextLabel")
+local ProjectJoJo = Instance.new("TextButton")
+local Piggy = Instance.new("TextButton")
+local KAT = Instance.new("TextButton")
+local ClickTP = Instance.new("TextButton")
+local OwlHub = Instance.new("TextButton")
+local ChatBypass = Instance.new("TextButton")
+local RacistDoplhinESP = Instance.new("TextButton")
+local ScriptsExit = Instance.new("TextButton")
+local Credits_3 = Instance.new("Frame")
+local Top_9 = Instance.new("Frame")
+local Top_10 = Instance.new("Frame")
+local CreditsTitle = Instance.new("TextLabel")
+local DsicordCredits = Instance.new("TextLabel")
+local TwitterCredits = Instance.new("TextLabel")
+local ServerCredits = Instance.new("TextLabel")
+local GroupCredits = Instance.new("TextLabel")
+local CreditsExit = Instance.new("TextButton")
+local OPEN = Instance.new("Frame")
+local OpenButton = Instance.new("TextButton")
+
+--Properties:
+
+ProjectEmeraldv200.Name = "Project Emerald v.2.0.0"
+ProjectEmeraldv200.Parent = game.CoreGui
+ProjectEmeraldv200.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Login.Name = "Login"
+Login.Parent = ProjectEmeraldv200
+Login.Active = true
+Login.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Login.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Login.BorderSizePixel = 0
+Login.Position = UDim2.new(0.358950317, 0, 0.107843146, 0)
+Login.Size = UDim2.new(0, 300, 0, 400)
+Login.Draggable = true
+Login.Visible = true
+
+Top.Name = "Top"
+Top.Parent = Login
+Top.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Top.BorderSizePixel = 0
+Top.Size = UDim2.new(0, 300, 0, 28)
+
+Top_2.Name = "Top"
+Top_2.Parent = Login
+Top_2.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Top_2.BorderSizePixel = 0
+Top_2.Position = UDim2.new(0, 0, 0.0700000003, 0)
+Top_2.Size = UDim2.new(0, 300, 0, 6)
+
+LoginTitle.Name = "LoginTitle"
+LoginTitle.Parent = Login
+LoginTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginTitle.BackgroundTransparency = 1.000
+LoginTitle.Position = UDim2.new(0, 0, 0.209999993, 0)
+LoginTitle.Size = UDim2.new(0, 300, 0, 50)
+LoginTitle.Font = Enum.Font.GothamBold
+LoginTitle.Text = "Login"
+LoginTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoginTitle.TextSize = 20.000
+
+Username.Name = "Username"
+Username.Parent = Login
+Username.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Username.BorderColor3 = Color3.fromRGB(13, 13, 13)
+Username.BorderSizePixel = 4
+Username.Position = UDim2.new(0.166666672, 0, 0.352499992, 0)
+Username.Size = UDim2.new(0, 200, 0, 29)
+Username.Font = Enum.Font.GothamBold
+Username.Text = " Username"
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextSize = 14.000
+Username.TextXAlignment = Enum.TextXAlignment.Left
+
+Password.Name = "Password"
+Password.Parent = Login
+Password.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Password.BorderColor3 = Color3.fromRGB(13, 13, 13)
+Password.BorderSizePixel = 4
+Password.Position = UDim2.new(0.166666672, 0, 0.517499983, 0)
+Password.Size = UDim2.new(0, 200, 0, 29)
+Password.Font = Enum.Font.GothamBold
+Password.Text = " Password"
+Password.TextColor3 = Color3.fromRGB(255, 255, 255)
+Password.TextSize = 14.000
+Password.TextXAlignment = Enum.TextXAlignment.Left
+
+Name.Name = "Name"
+Name.Parent = Login
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0, 0, 0.0849999934, 0)
+Name.Size = UDim2.new(0, 300, 0, 50)
+Name.Font = Enum.Font.GothamBold
+Name.Text = "Project Emerald v.2.0.0"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextSize = 20.000
+
+Credits.Name = "Credits"
+Credits.Parent = Login
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0, 0, 0.875, 0)
+Credits.Size = UDim2.new(0, 300, 0, 50)
+Credits.Font = Enum.Font.GothamBold
+Credits.Text = "Made By: Random Emeralds#4716"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 14.000
+
+LoginButton.Name = "Login Button"
+LoginButton.Parent = Login
+LoginButton.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+LoginButton.BorderColor3 = Color3.fromRGB(13, 13, 13)
+LoginButton.BorderSizePixel = 4
+LoginButton.Position = UDim2.new(0.166666672, 0, 0.689999998, 0)
+LoginButton.Size = UDim2.new(0, 200, 0, 50)
+LoginButton.Font = Enum.Font.GothamBold
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoginButton.TextSize = 14.000
+LoginButton.MouseButton1Down:connect(function() 
+if Username.Text == "Test" and Password.Text == "Test" then
+Login.Visible = false
+MainMenu.Visible = true
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Project Emerald v.2.0.0";
+    Text = "You Have Successfully Logged In. Have Fun :)";
+    Icon = "";
+    Duration = "3";
+})
+else
+	game.StarterGui:SetCore("SendNotification", {
+    Title = "Project Emerald v.2.0.0";
+    Text = "Invalid Username Or Password";
+    Icon = "";
+    Duration = "2";
+})
+end
+end)
+
+MainMenu.Name = "MainMenu"
+MainMenu.Parent = ProjectEmeraldv200
+MainMenu.Active = true
+MainMenu.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+MainMenu.BorderSizePixel = 0
+MainMenu.Position = UDim2.new(0.358950317, 0, 0.107843138, 0)
+MainMenu.Size = UDim2.new(0, 300, 0, 400)
+MainMenu.Visible = false
+MainMenu.Draggable = true
+
+MainTitle.Name = "MainTitle"
+MainTitle.Parent = MainMenu
+MainTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainTitle.BackgroundTransparency = 1.000
+MainTitle.Position = UDim2.new(0, 0, 0.0849999934, 0)
+MainTitle.Size = UDim2.new(0, 300, 0, 50)
+MainTitle.Font = Enum.Font.GothamBold
+MainTitle.Text = "Main Menu"
+MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainTitle.TextSize = 20.000
+
+ScriptsPortal.Name = "ScriptsPortal"
+ScriptsPortal.Parent = MainMenu
+ScriptsPortal.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ScriptsPortal.BorderColor3 = Color3.fromRGB(13, 13, 13)
+ScriptsPortal.BorderSizePixel = 4
+ScriptsPortal.Position = UDim2.new(0.166666672, 0, 0.25, 0)
+ScriptsPortal.Size = UDim2.new(0, 200, 0, 50)
+ScriptsPortal.Font = Enum.Font.GothamBold
+ScriptsPortal.Text = "Scripts & Games"
+ScriptsPortal.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsPortal.TextSize = 14.000
+ScriptsPortal.MouseButton1Down:connect(function() 
+MainMenu.Visible = false
+Scripts.Visible = true
+end)
+
+ExecutorPortal.Name = "ExecutorPortal"
+ExecutorPortal.Parent = MainMenu
+ExecutorPortal.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ExecutorPortal.BorderColor3 = Color3.fromRGB(13, 13, 13)
+ExecutorPortal.BorderSizePixel = 4
+ExecutorPortal.Position = UDim2.new(0.166666672, 0, 0.467499971, 0)
+ExecutorPortal.Size = UDim2.new(0, 200, 0, 50)
+ExecutorPortal.Font = Enum.Font.GothamBold
+ExecutorPortal.Text = "Executor"
+ExecutorPortal.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecutorPortal.TextSize = 14.000
+ExecutorPortal.MouseButton1Down:connect(function() 
+MainMenu.Visible = false
+Executor.Visible = true
+end)
+
+CreditsPortal.Name = "CreditsPortal"
+CreditsPortal.Parent = MainMenu
+CreditsPortal.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+CreditsPortal.BorderColor3 = Color3.fromRGB(13, 13, 13)
+CreditsPortal.BorderSizePixel = 4
+CreditsPortal.Position = UDim2.new(0.166666672, 0, 0.684999943, 0)
+CreditsPortal.Size = UDim2.new(0, 200, 0, 50)
+CreditsPortal.Font = Enum.Font.GothamBold
+CreditsPortal.Text = "Credits"
+CreditsPortal.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsPortal.TextSize = 14.000
+CreditsPortal.MouseButton1Down:connect(function() 
+MainMenu.Visible = false
+Credits_3.Visible = true
+end)
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = MainMenu
+Credits_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits_2.BackgroundTransparency = 1.000
+Credits_2.Position = UDim2.new(0, 0, 0.855000019, 0)
+Credits_2.Size = UDim2.new(0, 300, 0, 58)
+Credits_2.Font = Enum.Font.GothamBold
+Credits_2.Text = "Made By: Random Emeralds#4716"
+Credits_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits_2.TextSize = 14.000
+
+Top_3.Name = "Top"
+Top_3.Parent = MainMenu
+Top_3.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Top_3.BorderSizePixel = 0
+Top_3.Position = UDim2.new(0, 0, 0.0700000003, 0)
+Top_3.Size = UDim2.new(0, 300, 0, 6)
+
+Top_4.Name = "Top"
+Top_4.Parent = MainMenu
+Top_4.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Top_4.BorderSizePixel = 0
+Top_4.Size = UDim2.new(0, 300, 0, 28)
+
+MainMenuExit.Name = "MainMenuExit"
+MainMenuExit.Parent = MainMenu
+MainMenuExit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainMenuExit.BackgroundTransparency = 1.000
+MainMenuExit.BorderSizePixel = 0
+MainMenuExit.Position = UDim2.new(0.929999948, 0, 0.0075000003, 0)
+MainMenuExit.Size = UDim2.new(0, 21, 0, 21)
+MainMenuExit.Font = Enum.Font.GothamBold
+MainMenuExit.Text = "X"
+MainMenuExit.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainMenuExit.TextSize = 14.000
+MainMenuExit.MouseButton1Down:connect(function() 
+OPEN.Visible = true
+MainMenu.Visible = false 
+end)
+
+Executor.Name = "Executor"
+Executor.Parent = ProjectEmeraldv200
+Executor.Active = true
+Executor.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Executor.BorderSizePixel = 0
+Executor.Position = UDim2.new(0.288659781, 0, 0.205882356, 0)
+Executor.Size = UDim2.new(0, 450, 0, 300)
+Executor.Visible = false
+Executor.Draggable = true
+
+Top_5.Name = "Top"
+Top_5.Parent = Executor
+Top_5.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Top_5.BorderSizePixel = 0
+Top_5.Size = UDim2.new(0, 450, 0, 28)
+
+ExecutorTitle.Name = "ExecutorTitle"
+ExecutorTitle.Parent = Executor
+ExecutorTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecutorTitle.BackgroundTransparency = 1.000
+ExecutorTitle.Position = UDim2.new(0, 0, 0.0850000009, 0)
+ExecutorTitle.Size = UDim2.new(0, 450, 0, 50)
+ExecutorTitle.Font = Enum.Font.GothamBold
+ExecutorTitle.Text = "Executor"
+ExecutorTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecutorTitle.TextSize = 20.000
+
+ScrollingFeature.Name = "ScrollingFeature"
+ScrollingFeature.Parent = Executor
+ScrollingFeature.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ScrollingFeature.BorderColor3 = Color3.fromRGB(13, 13, 13)
+ScrollingFeature.Position = UDim2.new(0.0933333337, 0, 0.293333322, 0)
+ScrollingFeature.Size = UDim2.new(0, 367, 0, 148)
+
+Script.Name = "Script"
+Script.Parent = ScrollingFeature
+Script.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Script.BackgroundTransparency = 1.000
+Script.Size = UDim2.new(0, 353, 0, 999)
+Script.SizeConstraint = Enum.SizeConstraint.RelativeYY
+Script.Font = Enum.Font.SourceSans
+Script.Text = ""
+Script.TextColor3 = Color3.fromRGB(255, 255, 255)
+Script.TextSize = 14.000
+Script.TextXAlignment = Enum.TextXAlignment.Left
+Script.TextYAlignment = Enum.TextYAlignment.Top
+
+ExecutorExit.Name = "ExecutorExit"
+ExecutorExit.Parent = Executor
+ExecutorExit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecutorExit.BackgroundTransparency = 1.000
+ExecutorExit.BorderSizePixel = 0
+ExecutorExit.Position = UDim2.new(0.953333318, 0, 0, 0)
+ExecutorExit.Size = UDim2.new(0, 21, 0, 21)
+ExecutorExit.Font = Enum.Font.GothamBold
+ExecutorExit.Text = "X"
+ExecutorExit.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecutorExit.TextSize = 14.000
+ExecutorExit.MouseButton1Down:connect(function() 
+MainMenu.Visible = true
+Executor.Visible = false 
+end)
+
+Top_6.Name = "Top"
+Top_6.Parent = Executor
+Top_6.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Top_6.BorderSizePixel = 0
+Top_6.Position = UDim2.new(0, 0, 0.0700000003, 0)
+Top_6.Size = UDim2.new(0, 450, 0, 6)
+
+ExecuteButton.Name = "ExecuteButton"
+ExecuteButton.Parent = Executor
+ExecuteButton.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ExecuteButton.BorderColor3 = Color3.fromRGB(13, 13, 13)
+ExecuteButton.BorderSizePixel = 4
+ExecuteButton.Position = UDim2.new(0.166666672, 0, 0.839999974, 0)
+ExecuteButton.Size = UDim2.new(0, 137, 0, 24)
+ExecuteButton.Font = Enum.Font.GothamBold
+ExecuteButton.Text = "Execute"
+ExecuteButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButton.TextSize = 14.000
+ExecuteButton.MouseButton1Down:connect(function() 
+loadstring (Script.Text)
+end)
+
+ClearButton.Name = "ClearButton"
+ClearButton.Parent = Executor
+ClearButton.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ClearButton.BorderColor3 = Color3.fromRGB(13, 13, 13)
+ClearButton.BorderSizePixel = 4
+ClearButton.Position = UDim2.new(0.528888881, 0, 0.839999974, 0)
+ClearButton.Size = UDim2.new(0, 137, 0, 24)
+ClearButton.Font = Enum.Font.GothamBold
+ClearButton.Text = "Clear"
+ClearButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClearButton.TextSize = 14.000
+ClearButton.MouseButton1Down:connect(function() 
+Script.Text = ""
+end)
+
+Scripts.Name = "Scripts"
+Scripts.Parent = ProjectEmeraldv200
+Scripts.Active = true
+Scripts.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0.265229613, 0, 0.176470593, 0)
+Scripts.Size = UDim2.new(0, 500, 0, 330)
+Scripts.Visible = false
+Scripts.Draggable = true
+
+Top_7.Name = "Top"
+Top_7.Parent = Scripts
+Top_7.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Top_7.BorderSizePixel = 0
+Top_7.Size = UDim2.new(0, 500, 0, 28)
+
+Top_8.Name = "Top"
+Top_8.Parent = Scripts
+Top_8.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Top_8.BorderSizePixel = 0
+Top_8.Position = UDim2.new(0, 0, 0.0699999928, 0)
+Top_8.Size = UDim2.new(0, 500, 0, 6)
+
+Jailbreak.Name = "Jailbreak"
+Jailbreak.Parent = Scripts
+Jailbreak.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Jailbreak.BorderColor3 = Color3.fromRGB(13, 13, 13)
+Jailbreak.BorderSizePixel = 4
+Jailbreak.Position = UDim2.new(0.364000022, 0, 0.233333334, 0)
+Jailbreak.Size = UDim2.new(0, 135, 0, 50)
+Jailbreak.Font = Enum.Font.GothamBold
+Jailbreak.Text = "Jailbreak"
+Jailbreak.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jailbreak.TextSize = 14.000
+Jailbreak.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet("https://pastebin.com/raw/EBWBQxgH",true))() 
+end)
+
+ABizarreDay.Name = "ABizarreDay"
+ABizarreDay.Parent = Scripts
+ABizarreDay.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ABizarreDay.BorderColor3 = Color3.fromRGB(13, 13, 13)
+ABizarreDay.BorderSizePixel = 4
+ABizarreDay.Position = UDim2.new(0.364000022, 0, 0.484848499, 0)
+ABizarreDay.Size = UDim2.new(0, 135, 0, 50)
+ABizarreDay.Font = Enum.Font.GothamBold
+ABizarreDay.Text = "A Bizarre Day"
+ABizarreDay.TextColor3 = Color3.fromRGB(255, 255, 255)
+ABizarreDay.TextSize = 14.000
+ABizarreDay.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/CreativeHell/public-scripts/master/abd-public.lua',true))() 
+end)
+
+ScriptsTitle.Name = "ScriptsTitle"
+ScriptsTitle.Parent = Scripts
+ScriptsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsTitle.BackgroundTransparency = 1.000
+ScriptsTitle.Position = UDim2.new(0, 0, 0.0819697082, 0)
+ScriptsTitle.Size = UDim2.new(0, 500, 0, 50)
+ScriptsTitle.Font = Enum.Font.GothamBold
+ScriptsTitle.Text = "Scripts & Games"
+ScriptsTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsTitle.TextSize = 20.000
+
+ProjectJoJo.Name = "ProjectJoJo"
+ProjectJoJo.Parent = Scripts
+ProjectJoJo.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ProjectJoJo.BorderColor3 = Color3.fromRGB(13, 13, 13)
+ProjectJoJo.BorderSizePixel = 4
+ProjectJoJo.Position = UDim2.new(0.364000022, 0, 0.736363649, 0)
+ProjectJoJo.Size = UDim2.new(0, 135, 0, 50)
+ProjectJoJo.Font = Enum.Font.GothamBold
+ProjectJoJo.Text = "Project JoJo"
+ProjectJoJo.TextColor3 = Color3.fromRGB(255, 255, 255)
+ProjectJoJo.TextSize = 14.000
+ProjectJoJo.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet("https://pastebin.com/raw/4a6ZnNCh",true))() 
+end)
+
+Piggy.Name = "Piggy"
+Piggy.Parent = Scripts
+Piggy.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Piggy.BorderColor3 = Color3.fromRGB(13, 13, 13)
+Piggy.BorderSizePixel = 4
+Piggy.Position = UDim2.new(0.688000023, 0, 0.484848499, 0)
+Piggy.Size = UDim2.new(0, 135, 0, 50)
+Piggy.Font = Enum.Font.GothamBold
+Piggy.Text = "Piggy"
+Piggy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Piggy.TextSize = 14.000
+Piggy.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet("https://pastebin.com/raw/ctc0Fxw9",true))() 
+end)
+
+KAT.Name = "K.A.T."
+KAT.Parent = Scripts
+KAT.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+KAT.BorderColor3 = Color3.fromRGB(13, 13, 13)
+KAT.BorderSizePixel = 4
+KAT.Position = UDim2.new(0.688000023, 0, 0.736363649, 0)
+KAT.Size = UDim2.new(0, 135, 0, 50)
+KAT.Font = Enum.Font.GothamBold
+KAT.Text = "K.A.T."
+KAT.TextColor3 = Color3.fromRGB(255, 255, 255)
+KAT.TextSize = 14.000
+KAT.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet("https://pastebin.com/raw/s4h4Uqwg",true))() 
+end)
+
+ClickTP.Name = "ClickTP"
+ClickTP.Parent = Scripts
+ClickTP.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ClickTP.BorderColor3 = Color3.fromRGB(13, 13, 13)
+ClickTP.BorderSizePixel = 4
+ClickTP.Position = UDim2.new(0.688000023, 0, 0.233333334, 0)
+ClickTP.Size = UDim2.new(0, 135, 0, 50)
+ClickTP.Font = Enum.Font.GothamBold
+ClickTP.Text = "Click TP"
+ClickTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClickTP.TextSize = 14.000
+ClickTP.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet("https://pastebin.com/raw/iMKYkmcu",true))() 
+end)
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = Scripts
+OwlHub.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+OwlHub.BorderColor3 = Color3.fromRGB(13, 13, 13)
+OwlHub.BorderSizePixel = 4
+OwlHub.Position = UDim2.new(0.0440000482, 0, 0.484848499, 0)
+OwlHub.Size = UDim2.new(0, 135, 0, 50)
+OwlHub.Font = Enum.Font.GothamBold
+OwlHub.Text = "Owl Hub"
+OwlHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+OwlHub.TextSize = 14.000
+OwlHub.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))(); 
+end)
+
+ChatBypass.Name = "ChatBypass"
+ChatBypass.Parent = Scripts
+ChatBypass.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ChatBypass.BorderColor3 = Color3.fromRGB(13, 13, 13)
+ChatBypass.BorderSizePixel = 4
+ChatBypass.Position = UDim2.new(0.0440000482, 0, 0.736363649, 0)
+ChatBypass.Size = UDim2.new(0, 135, 0, 50)
+ChatBypass.Font = Enum.Font.GothamBold
+ChatBypass.Text = "Chat Bypass"
+ChatBypass.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatBypass.TextSize = 14.000
+ChatBypass.MouseButton1Down:connect(function() 
+--written by 0xPeep
+--𝓽𝓱𝓪𝓽 𝓲𝓼 𝓿𝓮𝓻𝔂 𝓶𝓾𝓬𝓱 𝓪𝓭𝓮𝓺𝓾𝓪𝓽𝓮
+
+local character1="ˌˌˌ";
+local character2="  ";
+local words=game:HttpGet("https://pastebin.com/1w4AzjzV",true);
+
+local mt=getrawmetatable(game);
+local namecall=mt.__namecall;
+setreadonly(mt,false);
+
+mt.__namecall=newcclosure(function(self,...)
+    local params={...};
+    if (self.Name=="SayMessageRequest") then
+        params[1]=string.gsub(params[1]," ",character2);
+        for word in params[1]:gmatch"%S+" do
+            if (word:len()>3) and words:find(word:lower()) then
+                params[1]=string.gsub(params[1],word,string.gsub(word,".",function(o)
+                    return o..character1;
+                end))
+            end
+        end
+    end
+    return namecall(self,unpack(params));
+end)
+
+setreadonly(mt,true);
+
+warn"[V2]: Chat bypass loaded! Credits to 0xPeep"; 
+end)
+
+RacistDoplhinESP.Name = "RacistDoplhinESP"
+RacistDoplhinESP.Parent = Scripts
+RacistDoplhinESP.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+RacistDoplhinESP.BorderColor3 = Color3.fromRGB(13, 13, 13)
+RacistDoplhinESP.BorderSizePixel = 4
+RacistDoplhinESP.Position = UDim2.new(0.0440000482, 0, 0.233333334, 0)
+RacistDoplhinESP.Size = UDim2.new(0, 135, 0, 50)
+RacistDoplhinESP.Font = Enum.Font.GothamBold
+RacistDoplhinESP.Text = "Racist Dolphin ESP"
+RacistDoplhinESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+RacistDoplhinESP.TextSize = 12.000
+RacistDoplhinESP.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet("https://pastebin.com/raw/V2kh83A8",true))() 
+end)
+
+ScriptsExit.Name = "ScriptsExit"
+ScriptsExit.Parent = Scripts
+ScriptsExit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsExit.BackgroundTransparency = 1.000
+ScriptsExit.BorderSizePixel = 0
+ScriptsExit.Position = UDim2.new(0.957333326, 0, 0, 0)
+ScriptsExit.Size = UDim2.new(0, 21, 0, 21)
+ScriptsExit.Font = Enum.Font.GothamBold
+ScriptsExit.Text = "X"
+ScriptsExit.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsExit.TextSize = 14.000
+ScriptsExit.MouseButton1Down:connect(function() 
+MainMenu.Visible = true
+Scripts.Visible = false
+end)
+
+Credits_3.Name = "Credits"
+Credits_3.Parent = ProjectEmeraldv200
+Credits_3.Active = true
+Credits_3.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Credits_3.BorderSizePixel = 0
+Credits_3.Position = UDim2.new(0.358950317, 0, 0.107843138, 0)
+Credits_3.Size = UDim2.new(0, 300, 0, 400)
+Credits_3.Visible = false
+Credits_3.Draggable = true
+
+Top_9.Name = "Top"
+Top_9.Parent = Credits_3
+Top_9.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Top_9.BorderSizePixel = 0
+Top_9.Position = UDim2.new(0, 0, 0.0700000003, 0)
+Top_9.Size = UDim2.new(0, 300, 0, 6)
+
+Top_10.Name = "Top"
+Top_10.Parent = Credits_3
+Top_10.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Top_10.BorderSizePixel = 0
+Top_10.Size = UDim2.new(0, 300, 0, 28)
+
+CreditsTitle.Name = "CreditsTitle"
+CreditsTitle.Parent = Credits_3
+CreditsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsTitle.BackgroundTransparency = 1.000
+CreditsTitle.Position = UDim2.new(0, 0, 0.0844697207, 0)
+CreditsTitle.Size = UDim2.new(0, 300, 0, 50)
+CreditsTitle.Font = Enum.Font.GothamBold
+CreditsTitle.Text = "Credits"
+CreditsTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsTitle.TextSize = 20.000
+
+DsicordCredits.Name = "DsicordCredits"
+DsicordCredits.Parent = Credits_3
+DsicordCredits.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+DsicordCredits.BorderColor3 = Color3.fromRGB(13, 13, 13)
+DsicordCredits.BorderSizePixel = 4
+DsicordCredits.Position = UDim2.new(0.0566666722, 0, 0.226969764, 0)
+DsicordCredits.Size = UDim2.new(0, 266, 0, 50)
+DsicordCredits.Font = Enum.Font.GothamBold
+DsicordCredits.Text = "Made By: Random Emeralds#4716"
+DsicordCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
+DsicordCredits.TextSize = 14.000
+
+TwitterCredits.Name = "TwitterCredits"
+TwitterCredits.Parent = Credits_3
+TwitterCredits.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+TwitterCredits.BorderColor3 = Color3.fromRGB(13, 13, 13)
+TwitterCredits.BorderSizePixel = 4
+TwitterCredits.Position = UDim2.new(0.0566666722, 0, 0.424469769, 0)
+TwitterCredits.Size = UDim2.new(0, 266, 0, 50)
+TwitterCredits.Font = Enum.Font.GothamBold
+TwitterCredits.Text = "My Twitter: @RandomEmerald"
+TwitterCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
+TwitterCredits.TextSize = 16.000
+
+ServerCredits.Name = "ServerCredits"
+ServerCredits.Parent = Credits_3
+ServerCredits.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ServerCredits.BorderColor3 = Color3.fromRGB(13, 13, 13)
+ServerCredits.BorderSizePixel = 4
+ServerCredits.Position = UDim2.new(0.0566666722, 0, 0.629469752, 0)
+ServerCredits.Size = UDim2.new(0, 266, 0, 50)
+ServerCredits.Font = Enum.Font.GothamBold
+ServerCredits.Text = "My Discord Server: pqWYujn"
+ServerCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
+ServerCredits.TextSize = 16.000
+
+GroupCredits.Name = "GroupCredits"
+GroupCredits.Parent = Credits_3
+GroupCredits.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+GroupCredits.BorderColor3 = Color3.fromRGB(13, 13, 13)
+GroupCredits.BorderSizePixel = 4
+GroupCredits.Position = UDim2.new(0.0566666722, 0, 0.831969738, 0)
+GroupCredits.Size = UDim2.new(0, 266, 0, 50)
+GroupCredits.Font = Enum.Font.GothamBold
+GroupCredits.Text = "My Group: Random Crusaders"
+GroupCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
+GroupCredits.TextSize = 16.000
+
+CreditsExit.Name = "CreditsExit"
+CreditsExit.Parent = Credits_3
+CreditsExit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsExit.BackgroundTransparency = 1.000
+CreditsExit.BorderSizePixel = 0
+CreditsExit.Position = UDim2.new(0.927333355, 0, 0, 0)
+CreditsExit.Size = UDim2.new(0, 21, 0, 21)
+CreditsExit.Font = Enum.Font.GothamBold
+CreditsExit.Text = "X"
+CreditsExit.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsExit.TextSize = 14.000
+CreditsExit.MouseButton1Down:connect(function() 
+MainMenu.Visible = true
+Credits_3.Visible = false
+end)
+
+OPEN.Name = "OPEN"
+OPEN.Parent = ProjectEmeraldv200
+OPEN.Active = true
+OPEN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OPEN.Position = UDim2.new(0.0196813494, 0, 0.892156839, 0)
+OPEN.Size = UDim2.new(0, 100, 0, 36)
+OPEN.Visible = false
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = OPEN
+OpenButton.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+OpenButton.BorderColor3 = Color3.fromRGB(13, 13, 13)
+OpenButton.BorderSizePixel = 4
+OpenButton.Size = UDim2.new(0, 100, 0, 36)
+OpenButton.Font = Enum.Font.GothamBold
+OpenButton.Text = "OPEN"
+OpenButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.TextSize = 20.000
+OpenButton.MouseButton1Down:connect(function() 
+MainMenu.Visible = true
+OPEN.Visible = false
+end)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Project Emerald v.2.0.0";
+    Text = "Project Emerald Has Loaded.";
+    Icon = "";
+    Duration = "1";
+})
